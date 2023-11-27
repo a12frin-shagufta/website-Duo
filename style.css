@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+#main{
+    background-color: #0f0D0D;
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+    /* percent means parent ke according vh means screen ke acccording*/
+}
+
+/*---navbar---*/
+#nav{
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px ;
+    mix-blend-mode: difference;
+    z-index: 99;
+    
+}
+
+#nav img{
+    height: 27px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+
+}
+
+#nav #circle{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#nav h4{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/* jaise mera h4 multiple time bna hua h or mujhe first wale ko target krna h to ase karenge*/
+#nav h4:nth-child(1){
+border-bottom: 2px solid #fff;
+}
+
+
+.page1 h1{
+    font-size: 7vw;
+    font-weight: 400;
+   
+    margin-left: 6vw;
+}
+
+.page1 h2{
+    font-size: 7vw;
+    font-weight: 400;
+    margin-left: 26vw;
+}
+
+
+
+
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+/* ----page2-----*/
+.page2{
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    position: relative;
+    z-index: 9;
+    border-bottom: 2px solid #111;
+
+
+}
+
+.page2 h1{
+font-size: 8vw;
+font-weight: 500;
+color: #111;
+}
+
+.page2-container{
+    height: 60vh;
+    /*ye height percent mai nhi lega beause iska parent jo h ppage 2 usse hmne min-height diya h wo bhi vh mai */
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+
+.page2-left{
+    
+    width: 29%;
+    line-height: 4vw;
+}
+.page2-right{
+    
+    width: 30%;
+}
+
+.page2-left h2{
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #111;
+}
+.page2-right p{
+    font-size: 2vw;
+    color: #111;
+
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+   background-color:  #EDBFFF;
+   color: #111;
+   margin-top: 20px;
+}
+    /*---page3----*/
+    .page3{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-top: 70px;
+        border-bottom: 2px solid #111;
+        z-index: 9;
+
+    }
+
+
+    .page3 h1{
+        font-size: 6.8vw;
+        font-weight: 500;
+        color:#111;
+        
+      
+    }
+    .page3-part1{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 70px;
+    }
+
+    .page3-part1 video{
+        height: 300px;
+    }
+    .page3-part1 img{
+       height: 300px;
+       margin-top: 100px;
+    }
+    
+    .page3-part2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 70px;
+        
+    }
+    .page3-part2 video{
+        height: 300px;
+        
+    }
+
+    .page3-part2 img{
+        height: 300px;
+        margin-top: 100px;
+     }
+     .page3-part3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        padding: 0 30px;
+        color: #fff;
+     }
+
+     .page3-part3 h1{
+        color: #fff;
+       font-size: 6vw;
+       font-weight: 300;
+     }
+
+     .circle2{
+        height: 120px;
+        width:120px;
+        border-radius: 50%;
+        background-color: #000;
+        text-align: center;
+        
+
+     }
+
+     .circle2 h6{
+        position: relative;
+        top: 50px;
+        font-size: 20px;
+       
+        
+     }
+     
+     /*----page4----*/
+
+     .page4{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding: 170px 100px;
+
+    
+     }
+     .elem{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        position: relative;
+        
+    
+        
+    }
+
+    .elem img{
+        position: absolute;
+        opacity: 0;
+        transition: all ease-out 0.5s;
+        transform: translateY(10%) rotate(2deg);
+
+
+    }
+    .elem img:nth-child(1){
+        left: 2.6%;
+    }
+
+    .elem img:nth-child(3){
+        right: 9.3%;
+    }
+
+    .elem:hover h1{
+        
+        transform: translateY(-100%);
+        color: #EDBFFF;
+    }
+
+    .elem:hover img{
+        opacity: 1;
+        transform: translate(0%) rotate(0deg);
+    }
+     .text-div{
+        
+        height: 16vh;
+        overflow: hidden;
+        z-index: 9;
+        overflow: hidden;
+     }
+
+    .elem h1{
+        font-size: 7.5vw ;
+        font-weight: 600;
+        transition: all ease-out 0.5s;
+    }
+
+    /*--page5--*/
+    .page5{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding: 140px 100px;
+    }
+
+    .page5 h1{
+   font-size: 4vw;
+   text-transform: uppercase;
+   font-weight: 400;
+    }
+
+    .box{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 20px;
+        border-top: 2px solid #dadada;
+    }
+
+    .box:nth-last-child(1){
+        border-bottom: 2px solid #dadada;
+    
+    }
+    
+    
+    footer{
+        height: 90vh;
+        width: 100%;
+        background-color: #EDBFFF;
+    }
